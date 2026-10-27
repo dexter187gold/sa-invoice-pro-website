@@ -1,30 +1,48 @@
-# SA Invoice Pro — Website
+# SA Invoice Pro — Marketing Website
 
-Public marketing + **pricing / payment portal** for SA Invoice Pro.
+Public marketing, pricing and checkout entry point for SA Invoice Pro. This is separate from the desk app and its production Worker.
 
-This is **not** the desk app repo.
+## Repositories and services
 
-| Repo | Role |
-|------|------|
-| [sa-invoice-pro](https://github.com/dexter187gold/sa-invoice-pro) | Desk SPA + license_server.py |
-| [saip-sync](https://github.com/dexter187gold/saip-sync) | Cloud sync + client portal API |
-| **sa-invoice-pro-website** (this) | Marketing, pricing, checkout entry |
+| Resource | Purpose |
+|---|---|
+| [sa-invoice-pro](https://github.com/dexter187gold/sa-invoice-pro) | Desk app and license/billing server source |
+| [saip-sync](https://github.com/dexter187gold/saip-sync) | Cloud sync and client portal API |
+| **sa-invoice-pro-website** (this repository) | Public marketing website, pricing, checkout entry, legal pages |
 
-**Product email:** sainvoicepro@gmail.com
+## Deploy on Cloudflare Pages
 
-## Deploy
+Cloudflare Pages project: **sa-invoice**  
+Production URL: https://sa-invoice.pages.dev  
+Git source: `dexter187gold/sa-invoice-pro-website`, branch `main`
 
-Cloudflare Pages or any static host:
-- Build: none required for v1 static site (or `npx serve .`)
-- Root: this repo
+This is a static HTML/CSS/JavaScript website. No npm build is required.
 
-Point DNS e.g. `www.sainvoicepro.co.za` or `sainvoicepro.pages.dev` here.
+- Framework preset: None
+- Build command: leave blank
+- Build output directory: `.`
+- Root directory: repository root
 
-## Payment flow (target)
+Every push to `main` should trigger a production deployment.
 
-1. User picks a plan on `/pricing.html`
-2. Redirect to PayFast (or Stripe) checkout
-3. Webhook on **license server** issues seats automatically
-4. User opens desk → License → Activate (or auto after return URL)
+## PayFast checkout
 
-See desk repo `docs/APP_LINKS.md` for live service URLs.
+The pricing page calls the server-side billing endpoint at:
+
+`https://sa-invoice-license.onrender.com/api/billing/checkout`
+
+The server creates the signed PayFast checkout fields and receives ITNs. Merchant ID/key and passphrase must remain configured on the license server's admin/environment settings; never put the passphrase in this public repository.
+
+The billing code uses `SA_WEBSITE_URL` (defaults to `https://sa-invoice.pages.dev`) to constrain return URLs, and `SA_LICENSE_SERVER_URL` (defaults to `https://sa-invoice-license.onrender.com`) for the ITN URL.
+
+**Before taking live payments:** configure the PayFast merchant account, test the sandbox checkout and ITN, and only then switch off sandbox mode. The current checkout is a single-payment flow, not an automatic monthly subscription. Prices should not be advertised as recurring until recurring billing is implemented and tested.
+
+## Pages
+
+- `index.html` — marketing home
+- `pricing.html` — plans and checkout modal
+- `payment-success.html` / `payment-cancelled.html` — payment return pages
+- `privacy.html` / `terms.html` — preliminary legal information
+- `404.html` — not-found page
+
+Product support: [sainvoicepro@gmail.com](mailto:sainvoicepro@gmail.com)
