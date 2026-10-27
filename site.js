@@ -17,4 +17,21 @@
       toggle.textContent = '☰';
     }));
   }
+  const current = location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.site-nav a').forEach(link => {
+    const href = link.getAttribute('href');
+    if (href && href.split('?')[0] === current) link.setAttribute('aria-current', 'page');
+  });
+  document.querySelectorAll('[data-contact-form]').forEach(form => {
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      const name = form.querySelector('[name="name"]')?.value.trim() || '';
+      const email = form.querySelector('[name="email"]')?.value.trim() || '';
+      const topic = form.querySelector('[name="topic"]')?.value.trim() || 'Website enquiry';
+      const message = form.querySelector('[name="message"]')?.value.trim() || '';
+      const subject = encodeURIComponent('SA Invoice Pro — ' + topic);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+      location.href = 'mailto:sainvoicepro@gmail.com?subject=' + subject + '&body=' + body;
+    });
+  });
 })();
