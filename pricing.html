@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pricing — SA Invoice Pro</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="/">SA Invoice Pro</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="https://sa-invoice-license.onrender.com/" rel="noopener">License portal</a>
+    </nav>
+  </header>
+
+  <main class="pricing">
+    <h1>Plans</h1>
+    <p class="lead">Click a plan to start checkout. After payment, the license server issues seats automatically (no manual approve).</p>
+
+    <div class="plans" id="plans">
+      <article class="plan" data-plan="solo">
+        <h2>Solo</h2>
+        <p class="price">From R299<span>/mo</span></p>
+        <ul>
+          <li>1 seat</li>
+          <li>Invoices, jobs, portal</li>
+          <li>Offline + cloud restore</li>
+        </ul>
+        <button type="button" class="btn btn-primary buy" data-plan="solo">Buy Solo</button>
+      </article>
+      <article class="plan recommended" data-plan="shop">
+        <div class="badge">Recommended</div>
+        <h2>Shop</h2>
+        <p class="price">From R599<span>/mo</span></p>
+        <ul>
+          <li>Up to 5 seats</li>
+          <li>Audit + bulk chase</li>
+          <li>Priority support</li>
+        </ul>
+        <button type="button" class="btn btn-primary buy" data-plan="shop">Buy Shop</button>
+      </article>
+      <article class="plan" data-plan="multi">
+        <h2>Multi-branch</h2>
+        <p class="price">From R1 299<span>/mo</span></p>
+        <ul>
+          <li>Up to 25 seats</li>
+          <li>White-label ready</li>
+          <li>SLA on license server</li>
+        </ul>
+        <button type="button" class="btn btn-primary buy" data-plan="multi">Buy Multi</button>
+      </article>
+    </div>
+
+    <p class="muted center">Prices are indicative until PayFast merchant IDs are live. Checkout opens the payment portal; failed payments never issue seats.</p>
+  </main>
+
+  <script src="pricing.js"></script>
+</body>
+</html>
