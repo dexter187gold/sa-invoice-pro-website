@@ -1,66 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-ZA">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SA Invoice Pro — Desk software for SA IT &amp; repair shops</title>
-  <meta name="description" content="Invoices, jobs, WhatsApp-first collections, client portal. Built for Southern African repair and MSP benches." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <title>SA Invoice Pro — Invoicing and job management for South African IT businesses</title>
+  <meta name="description" content="Quotes, invoices, repair jobs, client approvals and payment follow-ups in one practical desk app for South African IT repair shops and MSPs.">
+  <meta property="og:title" content="SA Invoice Pro — Run your desk. Get paid.">
+  <meta property="og:description" content="Invoicing and job management built for South African repair shops, technicians and MSPs.">
+  <link rel="canonical" href="https://sa-invoice.pages.dev/">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="site.js"></script>
 </head>
 <body>
-  <header class="nav">
-    <a class="brand" href="/">SA Invoice Pro</a>
-    <nav>
-      <a href="#features">Features</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="https://sa-invoice-license.onrender.com/" rel="noopener">License portal</a>
-      <a class="btn btn-sm" href="pricing.html">Buy license</a>
+  <div class="announcement"><span class="pulse"></span> Built for South African IT repair shops, technicians and MSPs</div>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="SA Invoice Pro home"><span class="brand-mark">SA<span>IP</span></span><span class="brand-copy">SA Invoice Pro<small>Run your desk. Get paid.</small></span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">☰</button>
+    <nav class="site-nav" id="site-nav">
+      <a href="#features">Features</a><a href="#workflow">How it works</a><a href="pricing.html">Pricing</a>
+      <a href="https://sa-invoice-license.onrender.com/" target="_blank" rel="noopener">License portal</a>
+      <a class="button button-small button-primary" href="pricing.html">Choose a plan <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
-
   <main>
-    <section class="hero">
-      <p class="eyebrow">For SA repair · MSP · mobile benches</p>
-      <h1>Run the desk. Get paid. Stay offline when the line drops.</h1>
-      <p class="lead">
-        Quotes → invoices → jobs → WhatsApp chase. Client portal for Accept / Decline.
-        Soft alpha trial available; paid seats activate after checkout.
-      </p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="pricing.html">View plans &amp; pay</a>
-        <a class="btn btn-ghost" href="https://github.com/dexter187gold/sa-invoice-pro" rel="noopener">Desk app repo</a>
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> The service desk for the people who fix things</div>
+        <h1>Less admin.<br><span class="gradient-text">More jobs closed.</span></h1>
+        <p class="hero-lead">Quotes, invoices, job cards and customer approvals in one focused workspace — designed around the way South African repair shops and IT service teams actually work.</p>
+        <div class="hero-actions"><a class="button button-primary" href="pricing.html">See plans &amp; pricing <span aria-hidden="true">→</span></a><a class="button button-secondary" href="#features">Explore the toolkit</a></div>
+        <div class="trust-row"><span><i class="check">✓</i> Built for local workflows</span><span><i class="check">✓</i> Customer portal links</span><span><i class="check">✓</i> Offline-friendly desk app</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of the SA Invoice Pro workflow">
+        <div class="visual-glow"></div>
+        <div class="dashboard-window">
+          <div class="window-top"><div class="window-dots"><i></i><i></i><i></i></div><span>SA INVOICE PRO <b>DESK</b></span><span class="online-dot">● Ready</span></div>
+          <div class="dashboard-body">
+            <div class="dash-sidebar"><div class="mini-logo">S</div><span class="side-active">▦</span><span>▤</span><span>▧</span><span>♧</span><span>⚙</span></div>
+            <div class="dash-content">
+              <div class="dash-heading"><div><small>WORKSPACE / OVERVIEW</small><h3>Good work starts here.</h3></div><span class="dash-date">TODAY</span></div>
+              <div class="metric-grid"><div class="metric"><small>OPEN JOBS</small><strong>12</strong><span class="metric-note">Keep work moving</span></div><div class="metric"><small>TO COLLECT</small><strong>R 8.4k</strong><span class="metric-note">Follow up with clients</span></div></div>
+              <div class="job-panel"><div class="job-panel-title">Recent activity <span>Illustrative preview</span></div><div class="job-row"><span class="job-icon">↗</span><div><b>Notebook diagnostics</b><small>Quote sent · Awaiting approval</small></div><span class="status-pill status-wait">Waiting</span></div><div class="job-row"><span class="job-icon job-icon-green">✓</span><div><b>Office network repair</b><small>Invoice ready · Customer notified</small></div><span class="status-pill status-done">Ready</span></div><div class="job-row"><span class="job-icon job-icon-purple">▤</span><div><b>Workstation setup</b><small>Job card · In progress</small></div><span class="status-pill status-live">Active</span></div></div>
+              <div class="dash-footer"><span>One workspace, fewer loose ends.</span><span class="footer-spark">↗</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="floating-note note-top"><span class="float-icon">✓</span><span><b>Approval received</b><small>Client portal</small></span></div>
+        <div class="floating-note note-bottom"><span class="float-icon float-icon-orange">R</span><span><b>Payment follow-up</b><small>Ready to share</small></span></div>
       </div>
     </section>
-
-    <section id="features" class="grid3">
-      <article>
-        <h3>Bench-native</h3>
-        <p>COD, on-site, remote rates. Job cards, portal, bank CSV match.</p>
-      </article>
-      <article>
-        <h3>WhatsApp-first</h3>
-        <p>Share portal links and payment chases the way SA shops already work.</p>
-      </article>
-      <article>
-        <h3>Licensed seats</h3>
-        <p>Pay online → license server issues seats. No waiting for manual approve.</p>
-      </article>
+    <section class="proof-strip"><div><strong>01</strong><span>Quotes &amp; invoices</span></div><div><strong>02</strong><span>Repair jobs &amp; job cards</span></div><div><strong>03</strong><span>Customer approvals</span></div><div><strong>04</strong><span>Collections &amp; follow-ups</span></div></section>
+    <section class="section-wrap section-block" id="features">
+      <div class="section-heading"><div class="eyebrow">The practical toolkit</div><h2>Made for the work<br><span class="muted-heading">behind the work.</span></h2><p>Keep the paperwork, customer communication and job status connected instead of scattered across messages and spreadsheets.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card feature-featured"><div class="feature-icon icon-lime">▤</div><div class="feature-kicker">01 / BILLING</div><h3>Quotes that become invoices</h3><p>Build consistent quotes and invoices, keep line items clear, and move approved work into the next step without starting from scratch.</p><a href="pricing.html">Explore plans <span>→</span></a><div class="feature-art invoice-art"><div class="invoice-paper"><div class="paper-brand">SA<span>IP</span></div><div class="paper-line long"></div><div class="paper-line"></div><div class="paper-row"><i></i><i></i><i></i></div><div class="paper-total"><small>TOTAL DUE</small><b>R 2,450.00</b></div></div></div></article>
+        <article class="feature-card"><div class="feature-icon icon-blue">⌘</div><div class="feature-kicker">02 / JOB MANAGEMENT</div><h3>Every repair has a trail</h3><p>Keep job details, service notes, parts and status together so the team knows what is happening next.</p><div class="mini-workflow"><span class="workflow-dot"></span><div><b>Diagnose</b><small>Capture the issue</small></div><span class="workflow-check">✓</span></div><div class="mini-workflow"><span class="workflow-dot dot-blue"></span><div><b>Repair</b><small>Record the work</small></div><span class="workflow-check">✓</span></div><div class="mini-workflow"><span class="workflow-dot dot-purple"></span><div><b>Return</b><small>Close the loop</small></div><span class="workflow-arrow">↗</span></div></article>
+        <article class="feature-card"><div class="feature-icon icon-purple">↗</div><div class="feature-kicker">03 / CUSTOMER PORTAL</div><h3>Let customers respond online</h3><p>Share customer-facing links for quote decisions and keep approval conversations attached to the job.</p><div class="portal-preview"><div class="portal-top"><span class="portal-avatar">C</span><div><b>Quote approval</b><small>Customer view</small></div><span class="portal-lock">⌑ Secure link</span></div><div class="portal-choice"><span>Repair and diagnostics</span><b>R 850.00</b></div><div class="portal-buttons"><span>Decline</span><strong>Accept quote&nbsp; ✓</strong></div></div></article>
+        <article class="feature-card"><div class="feature-icon icon-orange">₨</div><div class="feature-kicker">04 / COLLECTIONS</div><h3>Make follow-ups easier</h3><p>Keep outstanding amounts visible and share payment reminders using the channels your customers already use.</p><div class="collection-card"><div class="collection-label"><span>OUTSTANDING</span><span class="collection-trend">Track &amp; follow up</span></div><b>Know what is due.</b><div class="collection-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div></article>
+      </div>
     </section>
-
-    <section class="band">
-      <h2>How licensing works</h2>
-      <ol class="steps">
-        <li>Choose Solo / Shop / Multi on Pricing</li>
-        <li>Pay securely (PayFast / card — configured on the license server)</li>
-        <li>Open the desk → License → Activate with your account email</li>
-      </ol>
-      <p class="muted">We do <strong>not</strong> lock licenses to IP or MAC address — those break on mobile networks and office Wi‑Fi. Seats are tied to your <strong>paid account</strong> and a soft device id.</p>
-    </section>
+    <section class="workflow-section" id="workflow"><div class="section-wrap workflow-inner"><div class="section-heading"><div class="eyebrow">A cleaner workflow</div><h2>From first message<br>to <span class="gradient-text">finished job.</span></h2><p>One straightforward flow for the work your shop already does every day.</p></div><div class="workflow-steps"><article><span class="step-number">01</span><div class="step-icon">✎</div><h3>Record the job</h3><p>Capture the customer, device and problem to start with a clear job record.</p></article><article><span class="step-number">02</span><div class="step-icon">▤</div><h3>Quote &amp; get approval</h3><p>Share the quote and let your customer respond through a portal link.</p></article><article><span class="step-number">03</span><div class="step-icon">✓</div><h3>Complete &amp; invoice</h3><p>Track the work, issue the invoice and keep the paperwork together.</p></article><article><span class="step-number">04</span><div class="step-icon">↗</div><h3>Follow up</h3><p>See what is outstanding and make the next customer contact easier.</p></article></div></div></section>
+    <section class="section-wrap closing-cta"><div class="cta-orb"></div><div class="eyebrow">Ready for a tidier desk?</div><h2>Put your next job<br><span class="gradient-text">in the right place.</span></h2><p>Choose the plan that fits your shop. Checkout is handled by the SA Invoice Pro billing service.</p><a class="button button-primary" href="pricing.html">Compare plans <span>→</span></a><small>South African pricing · Secure PayFast checkout when merchant setup is enabled</small></section>
   </main>
-
-  <footer>
-    <p>© SA Invoice Pro · <a href="mailto:sainvoicepro@gmail.com">sainvoicepro@gmail.com</a></p>
-    <p class="muted">PC REPAIR DEX is a separate workshop brand — not this product site.</p>
-  </footer>
+  <footer class="site-footer"><div class="footer-main"><a class="brand" href="/"><span class="brand-mark">SA<span>IP</span></span><span class="brand-copy">SA Invoice Pro<small>Software for the service desk</small></span></a><p>Built for the people who keep businesses running.</p><div class="footer-links"><a href="pricing.html">Pricing</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:sainvoicepro@gmail.com">Contact</a></div></div><div class="footer-bottom"><span>© <span data-year></span> SA Invoice Pro</span><span>PC REPAIR DEX is a separate workshop brand.</span><a href="mailto:sainvoicepro@gmail.com">sainvoicepro@gmail.com</a></div></footer>
 </body>
 </html>

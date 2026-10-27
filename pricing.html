@@ -1,62 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-ZA">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pricing — SA Invoice Pro</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#07111f">
+  <title>Plans &amp; Pricing — SA Invoice Pro</title><meta name="description" content="Compare SA Invoice Pro licence plans for solo technicians, repair shops and multi-branch teams.">
+  <link rel="canonical" href="https://sa-invoice.pages.dev/pricing.html"><link rel="stylesheet" href="styles.css"><script defer src="site.js"></script><script defer src="pricing.js"></script>
 </head>
 <body>
-  <header class="nav">
-    <a class="brand" href="/">SA Invoice Pro</a>
-    <nav>
-      <a href="/">Home</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="https://sa-invoice-license.onrender.com/" rel="noopener">License portal</a>
-    </nav>
-  </header>
-
-  <main class="pricing">
-    <h1>Plans</h1>
-    <p class="lead">Click a plan to start checkout. After payment, the license server issues seats automatically (no manual approve).</p>
-
-    <div class="plans" id="plans">
-      <article class="plan" data-plan="solo">
-        <h2>Solo</h2>
-        <p class="price">From R299<span>/mo</span></p>
-        <ul>
-          <li>1 seat</li>
-          <li>Invoices, jobs, portal</li>
-          <li>Offline + cloud restore</li>
-        </ul>
-        <button type="button" class="btn btn-primary buy" data-plan="solo">Buy Solo</button>
-      </article>
-      <article class="plan recommended" data-plan="shop">
-        <div class="badge">Recommended</div>
-        <h2>Shop</h2>
-        <p class="price">From R599<span>/mo</span></p>
-        <ul>
-          <li>Up to 5 seats</li>
-          <li>Audit + bulk chase</li>
-          <li>Priority support</li>
-        </ul>
-        <button type="button" class="btn btn-primary buy" data-plan="shop">Buy Shop</button>
-      </article>
-      <article class="plan" data-plan="multi">
-        <h2>Multi-branch</h2>
-        <p class="price">From R1 299<span>/mo</span></p>
-        <ul>
-          <li>Up to 25 seats</li>
-          <li>White-label ready</li>
-          <li>SLA on license server</li>
-        </ul>
-        <button type="button" class="btn btn-primary buy" data-plan="multi">Buy Multi</button>
-      </article>
+  <div class="announcement"><span class="pulse"></span> Simple plans for South African service teams</div>
+  <header class="site-header"><a class="brand" href="/" aria-label="SA Invoice Pro home"><span class="brand-mark">SA<span>IP</span></span><span class="brand-copy">SA Invoice Pro<small>Run your desk. Get paid.</small></span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">☰</button><nav class="site-nav" id="site-nav"><a href="/#features">Features</a><a href="/#workflow">How it works</a><a class="nav-current" href="pricing.html">Pricing</a><a href="https://sa-invoice-license.onrender.com/" target="_blank" rel="noopener">License portal</a></nav></header>
+  <main>
+    <section class="pricing-hero section-wrap"><div class="eyebrow"><span class="eyebrow-line"></span> Plans &amp; pricing</div><h1>The right tools for<br><span class="gradient-text">your kind of desk.</span></h1><p>Start with the size of your team. Every plan is built around a cleaner flow from quote to job to invoice.</p><div class="billing-note"><span class="note-icon">i</span><span>Prices below are the current checkout amounts. The billing service currently processes a single payment; recurring subscriptions must be explicitly enabled before monthly billing can be advertised.</span></div></section>
+    <section class="section-wrap pricing-layout"><div class="plans-grid">
+      <article class="plan-card"><div class="plan-top"><span class="plan-label">FOR SOLO TECHS</span><span class="plan-symbol">01</span></div><h2>Solo</h2><p class="plan-description">A focused desk for one technician or independent repair business.</p><div class="plan-price"><strong>R299</strong><span>per purchase</span></div><ul class="plan-features"><li><i>✓</i> 1 licensed seat</li><li><i>✓</i> Quotes and invoices</li><li><i>✓</i> Repair jobs and job cards</li><li><i>✓</i> Customer portal links</li><li><i>✓</i> Offline-friendly workflow</li></ul><button class="button button-secondary button-full buy-button" type="button" data-plan="solo">Choose Solo <span>→</span></button><p class="plan-footnote">Best for independent technicians.</p></article>
+      <article class="plan-card plan-popular"><div class="popular-ribbon">MOST POPULAR</div><div class="plan-top"><span class="plan-label">FOR REPAIR SHOPS</span><span class="plan-symbol">02</span></div><h2>Shop</h2><p class="plan-description">More room for a busy bench and a small team handling daily jobs.</p><div class="plan-price"><strong>R599</strong><span>per purchase</span></div><ul class="plan-features"><li><i>✓</i> Up to 5 licensed seats</li><li><i>✓</i> Everything in Solo</li><li><i>✓</i> Team workflow support</li><li><i>✓</i> Bulk follow-up workflows</li><li><i>✓</i> Priority support channel</li></ul><button class="button button-primary button-full buy-button" type="button" data-plan="shop">Choose Shop <span>→</span></button><p class="plan-footnote">For growing repair teams.</p></article>
+      <article class="plan-card"><div class="plan-top"><span class="plan-label">FOR MULTI-SITE TEAMS</span><span class="plan-symbol">03</span></div><h2>Multi-branch</h2><p class="plan-description">A wider licence for teams coordinating work across locations.</p><div class="plan-price"><strong>R1,299</strong><span>per purchase</span></div><ul class="plan-features"><li><i>✓</i> Up to 25 licensed seats</li><li><i>✓</i> Everything in Shop</li><li><i>✓</i> Multi-team workflows</li><li><i>✓</i> White-label-ready direction</li><li><i>✓</i> SLA options discussed directly</li></ul><button class="button button-secondary button-full buy-button" type="button" data-plan="multi">Choose Multi-branch <span>→</span></button><p class="plan-footnote">For larger teams and multiple locations.</p></article>
     </div>
-
-    <p class="muted center">Prices are indicative until PayFast merchant IDs are live. Checkout opens the payment portal; failed payments never issue seats.</p>
+    <div class="checkout-assurance"><div class="assurance-mark">⌑</div><div><b>Checkout handled by the billing service</b><p>Your email is used to associate the licence with your account. Payment is processed by PayFast when the merchant account is configured.</p></div><div class="payment-wordmark">pay<span>fast</span></div></div>
+    <section class="faq-section"><div class="section-heading"><div class="eyebrow">Before you buy</div><h2>Questions, <span class="muted-heading">answered.</span></h2></div><div class="faq-list"><details><summary>How does licence activation work?</summary><p>Use the same email address at checkout and in SA Invoice Pro. After the billing service confirms the payment and issues the licence, open the app's License section to activate your account.</p></details><details><summary>Does the price renew automatically?</summary><p>The current checkout implementation is a single-payment flow, not an automatic recurring subscription. We will only describe or charge recurring billing after the subscription flow is configured and tested.</p></details><details><summary>Can I pay if checkout says PayFast is not configured?</summary><p>Not yet. The PayFast merchant ID and key must be configured by the product operator. Please do not send payment to an alternative account; contact <a href="mailto:sainvoicepro@gmail.com">sainvoicepro@gmail.com</a> for assistance.</p></details><details><summary>What if I use the wrong email?</summary><p>Contact support from the email address you intended to use and include your payment reference. Never send your password or PayFast login details.</p></details></div></section>
+    </section>
   </main>
-
-  <script src="pricing.js"></script>
+  <footer class="site-footer"><div class="footer-main"><a class="brand" href="/"><span class="brand-mark">SA<span>IP</span></span><span class="brand-copy">SA Invoice Pro<small>Software for the service desk</small></span></a><p>Built for the people who keep businesses running.</p><div class="footer-links"><a href="/">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:sainvoicepro@gmail.com">Contact</a></div></div><div class="footer-bottom"><span>© <span data-year></span> SA Invoice Pro</span><span>PC REPAIR DEX is a separate workshop brand.</span><a href="mailto:sainvoicepro@gmail.com">sainvoicepro@gmail.com</a></div></footer>
+  <dialog id="checkout-dialog" class="checkout-dialog" aria-labelledby="checkout-title"><form id="checkout-form" class="checkout-form"><button class="dialog-close" type="button" id="checkout-close" aria-label="Close checkout">×</button><div class="eyebrow">Secure checkout</div><h2 id="checkout-title">Let's get your desk set up.</h2><p class="dialog-intro">Enter the email you want associated with your SA Invoice Pro licence.</p><div class="selected-plan" id="selected-plan"><span>Selected plan</span><b>Shop</b><strong>R599</strong></div><label for="checkout-email">Account email</label><input id="checkout-email" name="email" type="email" autocomplete="email" placeholder="you@yourbusiness.co.za" required maxlength="254"><label class="terms-check"><input type="checkbox" id="checkout-terms" required><span>I agree to the <a href="terms.html" target="_blank" rel="noopener">terms of purchase</a> and <a href="privacy.html" target="_blank" rel="noopener">privacy notice</a>.</span></label><div class="checkout-error" id="checkout-error" role="alert" hidden></div><button class="button button-primary button-full" id="checkout-submit" type="submit">Continue to PayFast <span>↗</span></button><p class="secure-caption">Your payment details are entered on PayFast. Never share your card details by email.</p></form></dialog>
 </body>
 </html>
