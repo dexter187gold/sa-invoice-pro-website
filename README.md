@@ -19,6 +19,7 @@ A forest-green gradient, multi-page marketing website for SA Invoice Pro. This r
 - `pricing.html` — licence plans and PayFast checkout entry
 - `support.html` — contact and FAQ
 - `privacy.html` / `terms.html` — preliminary legal information
+- `refund-policy.html` — refund and cancellation policy (Paystack / compliance)
 - `payment-success.html` / `payment-cancelled.html` — checkout return pages
 - `404.html` — not-found page
 
@@ -31,6 +32,8 @@ Production URL: https://sa-invoice.pages.dev
 Git source: `dexter187gold/sa-invoice-pro-website`, branch `main`
 
 Static HTML/CSS/JS. Framework preset: None. Build command: blank. Output directory: `.`. Root directory: repository root.
+
+If a new page 404s after push, open Cloudflare → Workers & Pages → **sa-invoice** → Deployments → **Retry deployment** (or **Create deployment** from `main`). Confirm GitHub is still connected under Settings → Builds.
 
 ## PayFast
 
