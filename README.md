@@ -16,7 +16,7 @@ A forest-green gradient, multi-page marketing website for SA Invoice Pro. This r
 - `features.html` — product feature tour, actual invoice and job-screen captures
 - `how-it-works.html` — quote-to-invoice workflow
 - `about.html` — about SA Invoice Pro
-- `pricing.html` — licence plans and PayFast checkout entry
+- `pricing.html` — app-aligned annual licence plans and Paystack app checkout entry
 - `support.html` — contact and FAQ
 - `privacy.html` / `terms.html` — preliminary legal information
 - `refund-policy.html` — refund and cancellation policy (Paystack / compliance)
@@ -35,10 +35,8 @@ Static HTML/CSS/JS. Framework preset: None. Build command: blank. Output directo
 
 If a new page 404s after push, open Cloudflare → Workers & Pages → **sa-invoice** → Deployments → **Retry deployment** (or **Create deployment** from `main`). Confirm GitHub is still connected under Settings → Builds.
 
-## PayFast
+## Paystack
 
-The pricing page calls the billing service at `https://sa-invoice-license.onrender.com/api/billing/checkout`. Merchant credentials and the PayFast passphrase must remain server-side. Test the complete sandbox checkout and payment-notification flow before enabling live payments.
-
-The displayed prices are single-purchase licence prices, not recurring subscriptions. The checkout return page does not itself confirm a successful payment; the billing service must verify the payment notification before issuing a licence.
+The website directs customers to the SA Invoice Pro app licence page for checkout. The app's current self-service plans are Trial (7 days), Solo (R1,999/year, 1 seat), Shop (R4,999/year, up to 5 seats), and Multi-branch (R11,999/year, up to 25 seats). Lifetime and Enterprise licences are administrator-issued. Prices are guide prices; the billing service's checkout amount is authoritative. Paystack credentials and verification secrets must remain server-side.
 
 Support: [sainvoicepro@gmail.com](mailto:sainvoicepro@gmail.com).
