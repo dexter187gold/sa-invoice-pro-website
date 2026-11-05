@@ -3,82 +3,101 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#061b15">
   <title>Refund & Cancellation Policy — SA Invoice Pro</title>
-  <meta name="description" content="Refund and cancellation policy for SA Invoice Pro software licences and payments.">
+  <meta name="description" content="Refund, cancellation and annual software licence terms for SA Invoice Pro.">
   <link rel="canonical" href="https://sa-invoice.pages.dev/refund-policy.html">
+  <link rel="icon" href="assets/saip-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="site.js"></script>
   <style>
-    :root { --bg:#061b15; --panel:#0c2e24; --text:#e8f5f0; --muted:#9ec9b8; --accent:#3dd68c; --line:#1a4a3a; }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: linear-gradient(160deg,#061b15,#0a2a20 50%,#061b15); color: var(--text); line-height: 1.55; min-height: 100vh; }
-    a { color: var(--accent); }
-    header, footer { padding: 16px 20px; border-bottom: 1px solid var(--line); }
-    footer { border-top: 1px solid var(--line); border-bottom: 0; margin-top: 40px; }
-    .wrap { max-width: 720px; margin: 0 auto; padding: 28px 20px 48px; }
-    .brand { font-weight: 700; letter-spacing: 0.02em; }
-    .brand small { display: block; font-weight: 400; color: var(--muted); font-size: 0.85rem; }
-    h1 { font-size: 1.85rem; margin: 0 0 8px; }
-    h1 span { color: var(--accent); }
-    h2 { font-size: 1.15rem; margin: 28px 0 10px; color: var(--accent); }
-    p, li { color: var(--text); }
-    .muted { color: var(--muted); }
-    .panel { background: rgba(12,46,36,0.85); border: 1px solid var(--line); border-radius: 14px; padding: 22px 22px 8px; }
-    ul { padding-left: 1.2rem; }
-    li { margin-bottom: 8px; }
-    .eyebrow { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.72rem; color: var(--muted); margin-bottom: 8px; }
+    .policy-content{max-width:850px;margin:0 auto}
+    .policy-card{background:var(--card,rgba(12,46,36,.78));border:1px solid var(--line,rgba(255,255,255,.12));border-radius:18px;padding:clamp(20px,4vw,34px)}
+    .policy-card h2{margin:30px 0 10px;font-size:20px}
+    .policy-card h2:first-child{margin-top:0}
+    .policy-card p,.policy-card li{color:var(--muted);line-height:1.75}
+    .policy-card strong{color:var(--text)}
+    .policy-card a{color:var(--green2,var(--green,#34d399))}
+    .policy-card li{margin:8px 0}
+    .policy-note{padding:14px 16px;border-left:3px solid var(--green,#34d399);background:rgba(16,185,129,.08);border-radius:0 12px 12px 0}
   </style>
 </head>
 <body>
-  <header>
-    <div class="brand">SA Invoice Pro<small>Run your desk. Get paid.</small></div>
-  </header>
-  <div class="wrap">
-    <div class="eyebrow">Payments & licences</div>
-    <h1>Refund & <span>cancellation</span></h1>
-    <p class="muted">How refunds, cancellations and payment issues are handled for SA Invoice Pro software licences.</p>
-    <div class="panel">
-      <p><strong>Last updated: 5 November 2026</strong> · Deploy refresh</p>
-      <p>This policy applies to purchases of <strong>SA Invoice Pro</strong> software licences and related product payments processed for the software business (software development). It does not cover unrelated hardware or electronic-repair services that may be operated under a separate merchant profile.</p>
+<div class="announcement"><span class="pulse"></span> SA Invoice Pro · Software licences & billing</div>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="SA Invoice Pro home"><img src="assets/saip-logo.svg" alt="SA Invoice Pro app logo"><span class="brand-copy">SA Invoice Pro<small>Run your desk. Get paid.</small></span></a>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="features.html">Product</a><a href="how-it-works.html">How it works</a><a href="about.html">About</a><a href="pricing.html">Pricing</a><a href="support.html">Support</a>
+  </nav>
+  <div class="header-actions"><a class="button button-primary button-small" href="https://sa-invoice-pro.pages.dev/license" target="_blank" rel="noopener">Open app ↗</a><button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button></div>
+</header>
+<main>
+  <section class="page-hero"><div class="section-wrap page-heading">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Refund & cancellation</div>
+    <div class="eyebrow">Payments, annual licences & support</div>
+    <h1>Refund & <span class="accent">cancellation policy.</span></h1>
+    <p>This policy applies to SA Invoice Pro software licences sold for the SA Invoice Pro business desk application.</p>
+  </div></section>
+  <section class="page-content"><div class="section-wrap policy-content">
+    <article class="policy-card">
+      <p><strong>Last updated: 5 November 2026</strong></p>
+      <p class="policy-note"><strong>Business scope:</strong> SA Invoice Pro is a software development product for South African service teams. This merchant account and policy cover the SA Invoice Pro software only. They do not cover electronic repair, hardware sales, device repairs or other electronics services.</p>
 
-      <h2>What you are buying</h2>
-      <p>SA Invoice Pro licences are sold as single-purchase software licences unless a separate written agreement states otherwise. Plan details and seat limits are described on the marketing site pricing page at <a href="https://sa-invoice.pages.dev/pricing.html">sa-invoice.pages.dev/pricing.html</a>.</p>
-
-      <h2>Cancellation</h2>
+      <h2>1. What the licence includes</h2>
+      <p>The app currently presents a 7-day free trial and the following annual software licence options. Prices below are the app's published guide prices in South African rand (ZAR); the final amount displayed by the billing service at checkout takes precedence if a price has been updated.</p>
       <ul>
-        <li>There is no recurring subscription to cancel for the standard single-purchase licence plans shown on the website.</li>
-        <li>If a future recurring plan is offered, you may cancel renewal at any time before the next billing date by contacting support. Cancellation stops future charges; it does not automatically refund amounts already paid for the current period.</li>
+        <li><strong>Trial:</strong> Free for 7 days, with limited access to clients, invoices and quotes.</li>
+        <li><strong>Solo:</strong> R1,999 per year; 1 device seat.</li>
+        <li><strong>Shop:</strong> R4,999 per year; up to 5 seats.</li>
+        <li><strong>Multi-branch:</strong> R11,999 per year; up to 25 seats and multi-branch workspace features.</li>
+      </ul>
+      <p>Lifetime and Enterprise access are not standard self-service checkout plans. They are issued by an authorised administrator and may be subject to separate written commercial terms.</p>
+
+      <h2>2. Payment and activation</h2>
+      <p>Online licence payments are directed through the SA Invoice Pro app's Paystack checkout. Payment methods available to a customer are the methods displayed by Paystack at the time of checkout and may depend on eligibility and availability. A payment is not treated as successful merely because a customer returns to the app or website: the payment must be verified by the billing service before a licence or activation key is issued.</p>
+      <p>Keep your payment reference and the email address used at checkout. Do not send card details, passwords, PINs or one-time passcodes to support.</p>
+
+      <h2>3. Trial, cancellation and renewal</h2>
+      <ul>
+        <li>You may leave the free trial without making a purchase. No paid licence is created by simply using the trial.</li>
+        <li>The paid Solo, Shop and Multi-branch options are annual licences. They are not monthly plans.</li>
+        <li>If you decide not to continue, do not make a renewal purchase when the current annual term ends. If an automatic renewal is expressly offered in a future checkout, its frequency, amount and cancellation method will be disclosed before you authorise it.</li>
+        <li>If you have already paid and need the licence cancelled, contact support with your account email and payment reference. Cancellation of access does not by itself determine whether a refund is due.</li>
+        <li>If you abandon or close a checkout before payment is completed, no licence should be activated from that incomplete transaction. If your bank or payment provider nevertheless shows a debit, contact us with the transaction reference so it can be investigated.</li>
       </ul>
 
-      <h2>Refunds</h2>
+      <h2>4. Refunds</h2>
+      <p>Refund requests are reviewed individually and in accordance with applicable South African consumer-protection and electronic-transaction laws. Nothing in this policy removes or limits a right that cannot lawfully be excluded.</p>
       <ul>
-        <li><strong>Duplicate or erroneous charges:</strong> Contact us within <strong>14 days</strong> of the charge with your payment reference. Valid duplicate charges are refunded in full.</li>
-        <li><strong>Service not provided:</strong> If a paid licence cannot be activated or used because of a fault on our side, we will either restore access or refund the affected payment after verification.</li>
-        <li><strong>Change of mind:</strong> Once a licence has been issued and activated for the intended account, fees are generally non-refundable, except where South African consumer law requires otherwise or we agree a refund in writing.</li>
-        <li><strong>Partial use:</strong> Refunds are not ordinarily given solely because a feature set or seat count no longer matches your preference after activation.</li>
+        <li><strong>Duplicate or incorrect payment:</strong> We will investigate verified duplicate charges, incorrect amounts and payments applied to the wrong order. Where the error is confirmed, the excess or incorrect payment will be refunded or corrected.</li>
+        <li><strong>Licence not delivered:</strong> If payment is verified but we cannot provide the purchased licence because of a fault within our control, we will work to restore delivery. If we cannot resolve the issue within a reasonable time, we will assess an appropriate refund.</li>
+        <li><strong>Material service failure:</strong> If a material fault prevents the paid service from being supplied as described, contact support. We will investigate and provide the remedy required by law or otherwise agreed in writing.</li>
+        <li><strong>Change of mind:</strong> A change-of-mind request after activation is not automatically refundable. However, this does not affect any applicable statutory cooling-off, cancellation or refund rights.</li>
+        <li><strong>Unused time or features:</strong> A request based only on not using the service or not using every included feature is not, by itself, a guarantee of a pro-rata refund. Applicable statutory rights remain unaffected.</li>
       </ul>
+      <p>Where a statutory cooling-off right applies to the transaction, it will be honoured subject to the relevant legal conditions and exceptions. The treatment of digital services or content already supplied may depend on the consent and disclosures given at purchase.</p>
 
-      <h2>How to request a refund</h2>
-      <p>Email <a href="mailto:sainvoicepro@gmail.com">sainvoicepro@gmail.com</a> with:</p>
+      <h2>5. How to request a refund or cancellation</h2>
+      <p>Email <a href="mailto:sainvoicepro@gmail.com">sainvoicepro@gmail.com</a> and include:</p>
       <ul>
-        <li>The email address used at checkout</li>
-        <li>Payment or order reference</li>
-        <li>Date and amount of the charge</li>
-        <li>A short description of the issue</li>
+        <li>The name and email address used for the SA Invoice Pro account;</li>
+        <li>Your Paystack transaction/payment reference;</li>
+        <li>The plan purchased, payment date and amount;</li>
+        <li>A short explanation of the issue and the outcome you are requesting.</li>
       </ul>
-      <p>We aim to respond within <strong>5 business days</strong>. Approved refunds are returned to the original payment method where the payment provider allows it.</p>
+      <p>We aim to acknowledge and respond to requests within 5 business days. We may request reasonable information needed to verify the transaction. Approved refunds are sent to the original payment method where the payment provider supports this; the provider or bank may require additional processing time.</p>
 
-      <h2>Chargebacks</h2>
-      <p>Please contact us before raising a chargeback so we can resolve the matter directly. Chargebacks opened without first contacting support may delay investigation of a genuine refund request.</p>
+      <h2>6. Payment disputes</h2>
+      <p>Please contact us first if a payment appears incorrect or a licence has not been delivered, so we can investigate promptly. This request does not prevent you from contacting your bank, Paystack or the relevant consumer-protection authority, or from exercising any legal right.</p>
 
-      <h2>Contact</h2>
-      <p>SA Invoice Pro · Software product support<br>
-      <a href="mailto:sainvoicepro@gmail.com">sainvoicepro@gmail.com</a><br>
-      Business website: <a href="https://sa-invoice.pages.dev/">https://sa-invoice.pages.dev/</a></p>
-    </div>
-  </div>
-  <footer>
-    <div class="wrap" style="padding-top:0;padding-bottom:16px">
-      <span class="muted">© 2026 SA Invoice Pro. All rights reserved.</span>
-    </div>
-  </footer>
+      <h2>7. Contact</h2>
+      <p><strong>SA Invoice Pro — Software product support</strong><br>
+      Email: <a href="mailto:sainvoicepro@gmail.com">sainvoicepro@gmail.com</a><br>
+      Website: <a href="https://sa-invoice.pages.dev/">https://sa-invoice.pages.dev/</a><br>
+      App and licence page: <a href="https://sa-invoice-pro.pages.dev/license">https://sa-invoice-pro.pages.dev/license</a></p>
+    </article>
+  </div></section>
+</main>
+<footer class="site-footer"><div class="section-wrap"><div class="footer-bottom"><span>© <span data-year></span> SA Invoice Pro. All rights reserved.</span><span><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="refund-policy.html">Refund & cancellation</a></span></div></div></footer>
 </body>
 </html>
