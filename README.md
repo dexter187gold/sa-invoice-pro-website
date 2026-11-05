@@ -6,9 +6,9 @@ A forest-green gradient, multi-page marketing website for SA Invoice Pro. This r
 
 - **Website:** https://github.com/dexter187gold/sa-invoice-pro-website
 - **Desk app:** https://github.com/dexter187gold/sa-invoice-pro
-- **Production app:** https://sa-invoice-pro.pcrepairdex.workers.dev
+- **Production app:** https://sa-invoice-pro.pages.dev
 - **Cloudflare Pages:** https://sa-invoice.pages.dev
-- **Website Worker alias:** https://sa-invoice.pcrepairdex.workers.dev
+- **Website Worker alias:** https://sa-invoice.pages.dev
 
 ## Website pages
 
@@ -37,6 +37,6 @@ If a new page 404s after push, open Cloudflare → Workers & Pages → **sa-invo
 
 ## Paystack
 
-The website directs customers to the SA Invoice Pro app licence page for checkout. The app's current self-service plans are Trial (7 days), Solo (R1,999/year, 1 seat), Shop (R4,999/year, up to 5 seats), and Multi-branch (R11,999/year, up to 25 seats). Lifetime and Enterprise licences are administrator-issued. Prices are guide prices; the billing service's checkout amount is authoritative. Paystack credentials and verification secrets must remain server-side.
+The website directs customers to the SA Invoice Pro app licence page for checkout. The app displays a 7-day trial and the Solo, Shop and Multi-branch annual licence options; Lifetime and Enterprise access are administrator-issued. Published guide prices and features should be checked against the live app and billing service before being changed on this site. The app currently presents Paystack and PayFast as payment provider choices. Paystack credentials and verification secrets must remain server-side.
 
 Support: [sainvoicepro@gmail.com](mailto:sainvoicepro@gmail.com).
